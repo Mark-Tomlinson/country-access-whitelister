@@ -4,6 +4,8 @@
 
 Block traffic from countries that have no business on your site. Allow only the countries you choose — everyone else is denied. Useful when you only ship domestically, serve a regional audience, or want to reduce malicious traffic from countries you don't do business in.
 
+**Note:** If your host or CDN caches pages as static HTML (e.g., Cloudflare, LiteSpeed, WP Super Cache), those cached pages are served without executing PHP, so this plugin won't run for those requests. Visitors from blocked countries may see cached static content but will be blocked the moment they trigger a dynamic request — login, form submission, checkout, admin access, etc.
+
 ## Features
 
 * **Whitelist model** — allow specific countries, block all others
